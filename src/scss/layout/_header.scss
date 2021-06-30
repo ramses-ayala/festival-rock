@@ -1,0 +1,55 @@
+#header{
+
+    @include telefono{
+        background-color: $rosa;
+    }
+
+    @include tablet{
+        background-color: $negro;
+    }
+
+    @include desktop{
+        background-color: $verde;
+    }
+
+    .contenido-header{
+        
+        color: $blanco;
+
+        padding: $separacion / 2 0; // como JS
+        
+        @include tablet{
+            display: flex;
+            justify-content: space-between;    
+            align-items: center;
+        }
+
+    }
+
+    h1{
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include tablet{
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.navegacion-principal{
+
+    display: flex;
+    gap: 2rem; // separacion entre los enlaces (no tiene mucha compatibilidad) 
+    justify-content: center;
+
+    a{
+        color: $blanco;
+        font-size: 1.8rem;
+
+        &:hover{ // hace referencia al elemento padre (a)
+            color: $amarillo;
+        }
+
+    }
+}

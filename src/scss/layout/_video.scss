@@ -1,0 +1,41 @@
+.video{
+
+    height: 30rem;
+
+    position: relative;
+    overflow: hidden;
+
+    .overlay{
+        background: linear-gradient(to right, $morado, $rosa);
+        position: absolute;
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    video{
+        display: block;
+        width: 100%;
+    }
+}
+
+.content-video{
+    color: $blanco;
+    display: flex;
+    align-items: center;
+    height: inherit;
+
+    h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 6rem;
+    }
+
+    span{
+        background-color: $rosa;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}

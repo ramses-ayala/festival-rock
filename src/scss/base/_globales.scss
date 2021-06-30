@@ -1,0 +1,46 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: $black;
+}
+
+h2{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fixed{
+    box-shadow: 0 .3rem .4rem #444;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}

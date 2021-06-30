@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock festival</title>
+    <link rel="stylesheet" href="build/css/app.css" />
+</head>
+<body>
+
+    <header id="header">
+        <div class="container contenido-header">
+            <h1>Festival de musica</h1>        
+
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+
+        <div class="overlay">
+            <div class="container content-video">
+                <h2>Rock festival <span>Guadalajara, México</span></h2>                
+            </div>
+        </div>
+            
+        <video controls autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+        
+    </div>
+
+    <div class="container about-festival">
+        <div class="image">
+            <img src="build/img/imagen_vocalista.jpg" alt="vocalist image" />
+        </div>
+        <div class="festival-content">
+            <h2>Rock festival</h2>
+            <p class="date">Guadalajara, México</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, impedit officiis. Doloremque, 
+            soluta et! Eveniet soluta sunt consequatur odio distinctio exercitationem quae, dolores voluptas commodi magnam 
+            qui sed cum ipsa?</p>
+        </div>
+    </div>
+
+    <section class="lineup" id="lineup">
+
+        <h2>Line up</h2>
+
+        <p class="dia">Viernes</p>
+        <div class="escenarios-container container">
+            <div class="escenario rock bg-yellow">
+                <p class="nombre-escenario">Escenario rock</p>
+                <div class="box-image">
+                    <img src="build/img/icono_rock.png" alt="rock" class="img-escenario"/>
+                </div>
+                <ul class="calendar">
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                </ul>
+            </div>
+
+            <div class="escenario edm bg-green">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <div class="box-edm-image">
+                    <img src="build/img/icono_edm.png" alt="edm" class="img-escenario"/>
+                </div>
+                <ul class="calendar">
+                    <li>24:00 | <span>Grazziato</span></li>
+                    <li>24:00 | <span>Grazziato</span></li>
+                    <li>24:00 | <span>Grazziato</span></li>
+                    <li>24:00 | <span>Grazziato</span></li>
+                    <li>24:00 | <span>Grazziato</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="dia">Sabado</p>
+        <div class="escenarios-container container">
+            <div class="escenario rock bg-green">
+                <p class="nombre-escenario">scenario rock</p>
+                <div class="box-edm-image">
+                    <img src="build/img/icono_rock.png" alt="rock" class="img-escenario"/>
+                </div>
+                <ul class="calendar">
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                    <li>24:00 | <span>Roxet</span></li>
+                </ul>
+            </div>
+    
+            <div class="escenario edm bg-yellow">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <div class="box-edm-image">
+                    <img src="build/img/icono_edm.png" alt="edm" class="img-escenario"/>
+                </div>
+                <ul class="calendar">
+                    <li>24:00 | <span>Grazziato</span></li>
+                    <li>24:00 | <span>Kenny g</span></li>
+                    <li>24:00 | <span>Orquesta filarmonica</span></li>
+                    <li>24:00 | <span>Mozart</span></li>
+                    <li>24:00 | <span>Vivaldi</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="galery" id="galeria">
+        <h3>Galeria</h3>
+
+        <ul class="images-galery container">
+        </ul>
+    </section>
+
+    <section class="tickets bg-green" id="boletos">
+        <h3>Boletos</h3>
+
+        <div class="tickets-container container">
+            <div class="basic plan">
+                <p>pase 1 dia</p>
+
+                <table class="pass">
+                    <thead>
+                        <tr><th>Incluye</th></tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Acceso a todos los escenarios</td></tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr><td>$100</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="premium plan">
+                <p>pase 2 dias</p>
+
+                <table class="pass">
+                    <thead>
+                        <tr><th>Incluye</th></tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Acceso a todos los escenarios</td></tr>
+                        <tr><td>VIP 1</td></tr>
+                        <tr><td>VIP 2</td></tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr><td>$1000</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <p>Rock & EDM festival, Todos los derechos reservados &copy; </p>
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>

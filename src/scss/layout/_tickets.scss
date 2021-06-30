@@ -1,0 +1,72 @@
+.tickets{
+
+    padding: $separacion 0;
+
+    h3{
+        color: $blanco;
+        text-align: center;
+    }
+
+    .tickets-container{
+        @include tablet(){
+            @include grid(2,$separacion);
+        }
+    }
+    
+
+    .plan{
+        p{
+            color: $blanco;
+            font-size: 3rem;
+            margin: $separacion 0;
+            text-align: center;
+        }
+    }
+}
+
+.pass{
+
+    width: 100%;
+    border-spacing: 0;
+
+    thead{
+        background-color: $rosa;
+        th{
+            color: $blanco;
+            font-size: 2rem;
+            font-weight: $delgada;
+            padding: $separacion / 5 0;
+            text-transform: uppercase;
+        }
+    }
+
+    tbody{
+        background-color: $blanco;
+
+        td{
+            border: 1px solid #e1e1e1;
+            padding: $separacion / 4;
+        }
+
+        tr{
+            &:last-child{
+                td{
+                    border: none;
+                }
+            }
+        }
+    }
+
+    tfoot{
+        color: $blanco;
+        background-color: $morado;
+
+        td{
+            font-size: 2.8rem;
+            text-align: center;
+            padding: $separacion / 4;
+        }
+
+    }
+
+}
